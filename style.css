@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+ul li a{
+    text-decoration: none;
+    color: whitesmoke ;
+    font-weight: bold;
+}
+ul li {
+    position: relative;  
+   cursor: pointer; 
+}
+ ul li:hover:before {
+    width: 60%;
+    border-bottom: 3px solid rgb(0, 255, 128);
+} 
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#img {
+    animation: imgRotate 30s linear infinite;
+  }
+  
+  @keyframes imgRotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #bookingForm{
+    background-color: rgb(172, 209, 9);
+    min-height: 96.4vh;
+  } 
+#book{
+border: 2px solid white;
+text-decoration: none;
+  }
+  #book:hover{
+background-color: red;
+border: 2px solid rgb(236, 19, 19);
+}
+  #message{
+    border: 1px solid white;
+    color: white;
+  }
+  #message:hover{
+    color: gray;
+    border: 2PX SOLID rgb(56, 52, 52);
+  }
+  #email{
+    border: 1px solid rgb(19, 18, 18);
+    color: white;
+    background-color: rgb(32, 31, 31);
+  }
+  #email:hover{
+    border: 2PX SOLID rgb(235, 17, 17);
+  }
+  #menuB{
+    border: 1px solid red;
+    color: white;
+  }
+  #menuB:hover{
+    color: white;
+    border: 2PX SOLID rgb(250, 8, 8);
+    background-color: red;
+    font-weight: bold;
+  }
+
+  #button{
+    border: 1px solid red;
+    color: white;
+  }
+  #button:hover{
+    color: white;
+    border: 2PX SOLID rgb(250, 8, 8);
+    background-color: red;
+    font-weight: bold;
+  }

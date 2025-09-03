@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+         <!-- FontAwsome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CUSTOM CSS -->
+<link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+
+<body class="d-flex flex-column min-vh-100">
+    
+  
+  
+  
+  
+  <!----------------------------------           Header     --------------------------------->
+      <header class="bg-dark container-fluid" style="position: fixed; z-index: 100;">
+            <nav class="navbar navbar-expand container">
+            <div class="flex items-center col-lg-4 ">
+            <img src="./Old Town-01.png" alt="Old Town Restaurant" class="w-40 h-15 "></div>
+            <ul class="nav justify-content-end  col-lg-4">
+                 <li class="nav-item"><a class="nav-link text-white fw-bold" href="./index.html">Home</a></li>
+                 <li class="nav-item"><a class="nav-link text-white fw-bold" href="./About1.html">About</a></li>
+                 <li class="nav-item"><a class="nav-link text-white fw-bold " href="./Menu.html">Menu</a></li>
+                 <li class="nav-item"><a class="nav-link text-white fw-bold" href="./Contact.html">Contact</a></li></ul>
+                 <div class="col-lg-4" style="margin-left: 25%;">
+                  <a class="btn rounded-3 text-decoration-none text-white px-2 py-2 mt-1" style="cursor: pointer;" onclick="BookATable()" id="book">Book a table</a>
+                     </div></nav></header>
+    
+    
+    
+    
+    
+    
+    <!-------------------            Main  Section               ------------------------->
+
+    <main class="flex-grow-1">
+      
+        <div class="container-fluid" style="background-image: url(./Menu.jpg); background-size: 100%; padding-bottom: 3px; margin-top: 7%;">
+            <div class="row">
+            <div class="col mt-5"> <h2 class="text-center text-white fw-bold" style="font-size: 50px;">MENU</h2>
+                <h5 class="text-center text-white fw-bold pb-4">Indulge in the exquisite and diverse tastes of
+                    <br> Middle Eastern cuisine with our menu.</h5></div>
+        </div>
+        </div>
+        <div class="bg-dark">
+         <!-----------------------Button Section --------------------- -->
+         
+            <section style="background-color: rgb(37, 36, 36);"> 
+              <div class="container ">
+                <div class="row pt-5">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-10">
+                    <div class="row">
+                    <div class="col-lg-4 text-white"><a href="#Main Course" class="btn py-2 mb-2 px-5 ms-2" id="menuB"><strong>Main  Course</strong></a></div>
+                    <div class="col-lg-3 text-white"><a href="#Weight" class="btn py-2 mb-2 px-5" id="menuB"><strong>By Weight</strong></a></div>
+                    <div class="col-lg-3 text-white"><a href="#Family" class="btn py-2 mb-2 px-5" id="menuB"><strong>By Family</strong></a></div>
+                    <div class="col-lg-2 text-white"><a href="#Sandwich" class="btn py-2 mb-2 px-5" id="menuB"><strong>SandWiches</strong></a></div>
+                    </div></div>
+                  <div class="col-lg-1"></div></div>
+
+
+                <!-- ROW BUTTON 2 -->
+                <div class="row mt-3">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                  <div class="row">
+                  <div class="col-lg-4 text-white"><a href="#Salad" class="btn py-2 mb-2 px-5" id="menuB"><strong>Salad Appetizer</strong></a></div>
+                  <div class="col-lg-3 text-white"><a href="#Dessert" class="btn py-2 mb-2 px-5 ms-2" id="menuB"><strong>Dessert</strong></a></div>
+                  <div class="col-lg-3 text-white"><a href="#Breakfast" class="btn py-2 mb-2 px-5" id="menuB"><strong>Breakfast</strong></a></div>
+                  <div class="col-lg-2 text-white"><a href="#Drink" class="btn py-2 mb-2 px-5 ms-3" id="menuB"><strong>Drinks</strong></a></div>
+                  </div></div>
+                <div class="col-lg-1"></div></div></div></section>
+        
+        <!--------------------- Section 2 -------------------------->
+        
+        <section class="mt-5" >
+        <div class="container"><div class="row container">
+          <div class="col"><h3 class="text-white fw-bold mb-2" id="Main Course" style="font-size:40px;" >Main Course</h3></div></div>
+       
+       
+       
+       
+       <!----------------------------   Row1   ------------------  -->
+          <div class="row container">
+                <!-- Img1 -->
+                <div class="col-lg-3 text-white bg-dark mb-2">
+                    <div class="card bg-dark" style="width: 16rem;">
+                    <img src="./C kabab.jpeg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title text-white fw-bold">CHICKEN KABAB[2SK]</h5>
+                    <h4 class="text-danger fw-bold">$15.99</h4>
+                    </div></div></div>
+                  
+                  
+                <!-- img2 -->
+                <div class="col-lg-3 text-white bg-dark  "><div class="card bg-dark" style="width: 16rem;">
+                    <img src="./C Wings.jpeg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">CHICKEN WINGS</h5>
+                    <h4 class="text-danger fw-bold">$15.99</h4>
+                    </div></div></div>
+                  
+                  
+                <!-- img3 -->
+                <div class="col-lg-3 text-white bg-dark "><div class="card bg-dark" style="width: 16rem;">
+                    <img src="./Rice w S.jpeg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">RIVE WITH STEW</h5>
+                    <h4 class="text-danger fw-bold">$16.99</h4>
+                    </div></div></div>
+                 
+                 
+                <!-- img4 -->
+                <div class="col-lg-3 text-white bg-dark "><div class="card bg-dark" style="width: 16rem;">
+                    <img src="./4 mix plate.jpeg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">CHICKEN FILLET</h5>
+                    <h4 class="text-danger fw-bold">$17.99</h4>
+                    </div></div></div>
+
+
+
+
+    <!--------------------------            Row-2            ------------------  -->
+                  <div class="row">
+                    
+                    <!-- Img1 -->
+                    <div class="col-lg-3 text-white mb-2">
+                        <div class="card bg-dark" style="width: 16rem;">
+                        <img src="./K L A B.jpeg" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title text-white fw-bold">Kabab ?Lamb and Beef? (2Sk)</h5>
+                        <h4 class="text-danger fw-bold">$17.99</h4>
+                        </div></div></div>
+                    
+                    
+                    <!-- img2 -->
+                    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                        <img src="./S T Chicken.jpeg" class="card-img-top" >
+                        <div class="card-body">
+                        <h5 class="card-title">Shish Taouk ?Chicken? (2Sk)</h5>
+                        <h4 class="text-danger fw-bold">$17.99</h4>
+                        </div></div></div>
+                      
+                      
+                      
+                    <!-- img3 -->
+                    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                        <img src="./Adana L B.jpeg" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Adana Kabab ?Lamb and Beef? (Spicy) (2Sk)</h5>
+                        <h4 class="text-danger fw-bold">$18.99</h4>
+                        </div></div></div>
+                      
+                      
+                    <!-- img4 -->
+                    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+                        <img src="./c kabsa.jpeg" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Chicken Kabsa</h5>
+                        <h4 class="text-danger fw-bold">$19.99</h4>
+                        </div></div></div>
+                      
+                      
+                      
+    <!-- -----------------------------                    Row-3           ---------- -------------->
+                      <div class="row">
+
+
+                        <!-- Img1 -->
+                        <div class="col-lg-3 text-white  ">
+                            <div class="card bg-dark" style="width: 16rem;">
+                            <img src="./c mandi.jpeg" class="card-img-top" alt="">
+                            <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Chicken Mandi</h5>
+                            <h4 class="text-danger fw-bold">$19.99</h4>
+                            </div></div></div>
+                          
+                          
+                        <!-- img2 -->
+                        <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                            <img src="./t lamb.jpeg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">Tikka Lamb (2SK)</h5>
+                            <h4 class="text-danger fw-bold">$19.99</h4>
+                            </div></div></div>
+                          
+                      
+                      <!-- img3 -->
+                        <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                            <img src="./T lamb shank.jpeg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">Tashrip Lamb Shank</h5>
+                            <h4 class="text-danger fw-bold">$21.99</h4>
+                            </div></div></div>
+                      
+                      
+                      <!-- img4 -->
+                        <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                            <img src="./3 mix plate.jpeg" class="card-img-top">
+                            <div class="card-body">
+                            <h5 class="card-title">3 Mix Plate</h5>
+                            <h4 class="text-danger fw-bold">$24.99</h4>
+                            </div></div></div>
+
+                          <!--------------------           Row 4          ------------------------- -->
+                          
+                          
+                          
+                          <div class="row">
+                            <!-- Img1 -->
+                            <div class="col-lg-3 text-white  ">
+                                <div class="card bg-dark" style="width: 16rem;">
+                                <img src="./delima.jpeg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                  <h5 class="card-title text-white fw-bold">DELIMIA</h5>
+                                  <h4 class="text-danger fw-bold">$17.99</h4>
+                                </div>
+                              </div></div>
+                              <!-- img2 -->
+                            <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                                <img src="./GBWLS.jpeg" class="card-img-top" >
+                                <div class="card-body">
+                                  <h5 class="card-title">Green Beans with lamb shank</h5>
+                                  <h4 class="text-danger fw-bold">$17.99</h4>
+                                </div>
+                              </div></div>
+                              <!-- img3 -->
+                            <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+                                <img src="./K with Lamb shank.jpeg" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kabseh With Lamb Shank</h5>
+                                  <h4 class="text-danger fw-bold">$18.99</h4>
+                                </div>
+                              </div></div>
+                              <!-- img4 -->
+                            <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+                                <img src="./Mandi w lamb S.jpeg" class="card-img-top">
+                                <div class="card-body">
+                                  <h5 class="card-title">Mandi With Lamb Shank</h5>
+                                  <h4 class="text-danger fw-bold">$19.99</h4>
+                                </div>
+                              </div></div>
+        </div>
+<!--  -------------------     Row 5 --------- -->
+       
+
+<div class="row container">
+          <!-- Img1 -->
+          <div class="col-lg-3 text-white  ">
+              <div class="card bg-dark" style="width: 16rem;">
+              <img src="./Okra w l s.jpeg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title text-white fw-bold">Okra with lamb shank</h5>
+                <h4 class="text-danger fw-bold">$19.99</h4>
+              </div>
+            </div></div>
+            <!-- img2 -->
+          <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+              <img src="./Quzi.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Quzi</h5>
+                <h4 class="text-danger fw-bold">$19.99</h4>
+              </div>
+            </div></div>
+            <!-- img3 -->
+          <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+              <img src="./Gkibbeh.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Stuffed grape leaves with lamb shank</h5>
+                <h4 class="text-danger fw-bold">$21.99</h4>
+              </div>
+            </div></div>
+            <!-- img4 -->
+          <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+              <img src="./Zbeadi.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Zbeadi</h5>
+                <h4 class="text-danger fw-bold">$25.99</h4>
+              </div>
+            </div></div>
+    </div>
+</section> 
+
+
+
+
+                             <!-- 0------------------             Section Weight By -->
+<section >
+<div class="container">
+  <div class="row mt-5 container">
+    <div class="col">
+        <h3 class="text-white fw-bold mb-2" style="font-size:40px;" id="Weight">BY WEIGHT</h3>
+    </div>
+</div>
+
+<!--- ----------------------          Row 1       ----------------------->
+<div class="row container">
+  <!-- Img1 -->
+  <div class="col-lg-3 text-white  ">
+      <div class="card bg-dark" style="width: 16rem;">
+      <img src="./1 kg chicken kabab.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title text-white fw-bold">½ Kg Chicken Kabab</h5>
+        <h4 class="text-danger fw-bold">$24.99</h4>
+      </div>
+    </div></div>
+    <!-- img2 -->
+  <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+      <img src="./1kg tikka lamb.jpeg" class="card-img-top" >
+      <div class="card-body">
+        <h5 class="card-title">½ Kg Kabab</h5>
+        <h4 class="text-danger fw-bold">$26.99</h4>
+      </div>
+    </div></div>
+    <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+      <img src="./1kg shish taouk.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">1 Kg Shish Taouk</h5>
+        <h4 class="text-danger fw-bold">$49.99</h4>
+      </div>
+    </div></div>
+    <!-- img4 -->
+  <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+      <img src="./kg Tikka lamb.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">½ Kg Tikka Lamb</h5>
+        <h4 class="text-danger fw-bold">$34.99</h4>
+      </div>
+    </div></div>
+
+
+</div>
+</section>
+
+
+<!-- 0------------------             Section  By Family-->
+<section id="Family">
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:40px;" >FAMILY SIZE</h3>
+      </div>
+  </div>
+  
+  <!--- ----------------------          Row 1       ----------------------->
+  <div class="row container">
+ <!-- Img1 -->
+ <div class="col-lg-3 text-white  ">
+  <div class="card bg-dark" style="width: 16rem;">
+  <img src="./Shish Taouk 10sk.jpeg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title text-white fw-bold">Shish Taouk (10 SK)</h5>
+    <h4 class="text-danger fw-bold">$74.99</h4>
+  </div>
+</div></div>
+<!-- img2 -->
+<div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+  <img src="./Tikka Lamb 10sk.jpeg" class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title fw-bold">Tikka Lamb (10 sk)</h5>
+    <h4 class="text-danger fw-bold">$84.99</h4>
+  </div>
+</div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Mix Mandi F.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Chicken Mandi Family</h5>
+          <h4 class="text-danger fw-bold">$49.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./cHICKEN  10SK.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Chicken kabab (10 SK )</h5>
+          <h4 class="text-danger fw-bold">$54.99</h4>
+        </div>
+      </div></div>
+  
+  <!-- -----------------------         Row 2         ------------------>
+  <div class="row container">
+    <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+      <img src="./family 20sk.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Family Mix (15 Sk)</h5>
+        <h4 class="text-danger fw-bold">$99.99</h4>
+      </div>
+    </div></div>
+    <!-- img4 -->
+  <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+      <img src="./Ottawa Kabeb mix plate.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Ottawa kabab Family mix plate</h5>
+        <h4 class="text-danger fw-bold">$84.99</h4>
+      </div>
+    </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./family Mix 10sk.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Family Mix Kabab (10 SK)</h5>
+          <h4 class="text-danger fw-bold">$59.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./kabesh Lamb shank F.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Kabseh lamb shank Family</h5>
+          <h4 class="text-danger fw-bold">$64.99</h4>
+        </div>
+      </div></div>
+
+       <!-- -----------------------         Row 3         ------------------>
+  <div class="row">
+   
+  
+  </div>
+  </section>
+
+  <!-- 0------------------             Section  By SALAD-->
+<section >
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:40px;" id="Salad">SALAD & APPERTIZER</h3>
+      </div>
+  </div>
+  
+  <!--- ----------------------          Row 1       ----------------------->
+  <div class="row container">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./Falafel.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Falafel (6pcs)</h5>
+          <h4 class="text-danger fw-bold">$10.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Gkibbeh.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Grilled kibbeh (2pcs)</h5>
+          <h4 class="text-danger fw-bold">$10.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./SGrape LWOO.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Stuffed grape leaves with olive oil</h5>
+          <h4 class="text-danger fw-bold">$10.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./CRoll 4pc.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Cheese Roll (4pcs)</h5>
+          <h4 class="text-danger fw-bold">$11.99</h4>
+        </div>
+      </div></div>
+  
+  <!-- -----------------------         Row 2         ------------------>
+  <div class="row">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./Fried Kibbeh 4pc.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Fried kibbeh (4pcs)</h5>
+          <h4 class="text-danger fw-bold">$11.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Meat roll L.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Meat Roll ?Lamb? (4psc)</h5>
+          <h4 class="text-danger fw-bold">$11.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Mix App.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Mix appetizers</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Chicken Fattoush Salad.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Chicken Fattoush Salad</h5>
+          <h4 class="text-danger fw-bold">$15.99</h4>
+        </div>
+      </div></div>
+
+       <!-- -----------------------         Row 3         ------------------>
+  <div class="row">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./Veggie Plate.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Veggie plate</h5>
+          <h4 class="text-danger fw-bold">$4.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./lentil soup.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Lentil soup</h5>
+          <h4 class="text-danger fw-bold">$8.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./123.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Garden salad</h5>
+          <h4 class="text-danger fw-bold">$9.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./wedges.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">wedges</h5>
+          <h4 class="text-danger fw-bold">$8.99</h4>
+        </div>
+      </div></div>
+  </div>
+  </section>
+
+
+  <!-- 0------------------             Section  By SANDWICHES-->
+<section >
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:30px;" id="Sandwich">SANDWICHES</h3>
+      </div>
+  </div>
+  
+  <!--- ----------------------          Row 1       ----------------------->
+ 
+  <div class="row container">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./C Fillet.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Chicken Fillet</h5>
+          <h4 class="text-danger fw-bold">$10.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./C Fillet.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Tikka lamb</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./AKLAB.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Adana kabab ?Lamb and Beef? (spicy)</h5>
+          <h4 class="text-danger fw-bold">$12.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./C Wings.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Kabab Combo</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+  </div>
+  </section>
+
+
+
+  <!-- 0------------------             Section  By BREAKFAST-->
+<section id="Breakfast">
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:40px;" >BREAKFAST</h3>
+      </div>
+  </div>
+
+ <!-- -----------------------         Row 1      ------------------>
+  <div class="row container">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./FHWG.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Fatteh Hummus with ghee</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./FHWLO.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Fatteh Hummus with local oil</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./Falafel.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Falafel (6pcs)</h5>
+          <h4 class="text-danger fw-bold">$12.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./HW Meat a N.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Hummus with meat and nuts</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+  </div>
+  </section>
+
+
+
+  <!-- 0------------------             Section  By DESERT-->
+<section id="Dessert">
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:40px;" >DESSERTS</h3>
+      </div>
+  </div>
+  
+<!-- -----------------------         Row 1         ------------------>
+  <div class="row container">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./HWA3pc.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Harissa With Almonds (3pcs)</h5>
+          <h4 class="text-danger fw-bold">$4.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./HWP 2pc.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Harissa With Pistachios (2pcs)</h5>
+          <h4 class="text-danger fw-bold">$8.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./KWA.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Kunafe With Ashta</h5>
+          <h4 class="text-danger fw-bold">$9.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./WAC.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Warbat Ashta ( cream )</h5>
+          <h4 class="text-danger fw-bold">$8.99</h4>
+        </div>
+      </div></div>
+  </div>
+  </section>
+
+
+  <!-- 0------------------             Section BY SOFTDRIK-->
+<section id="Drink">
+  <div class="container">
+    <div class="row mt-3 container">
+      <div class="col">
+          <h3 class="text-white fw-bold mb-2" style="font-size:40px;" >SOFT DRINK</h3>
+      </div>
+  </div>
+  
+<!-- -----------------------         Row 1        ------------------>
+  <div class="row container">
+    <!-- Img1 -->
+    <div class="col-lg-3 text-white  ">
+        <div class="card bg-dark" style="width: 16rem;">
+        <img src="./aryan yougert pitcher.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-white fw-bold">Ayran Yogurt Pitcher</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+      <!-- img2 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./soft drinks.jpeg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Soft Drink</h5>
+          <h4 class="text-danger fw-bold">$24.99</h4>
+        </div>
+      </div></div>
+      <!-- img3 -->
+    <div class="col-lg-3 text-white "><div class="card bg-dark" style="width: 16rem;">
+        <img src="./rani juice.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Rani Juice</h5>
+          <h4 class="text-danger fw-bold">$12.99</h4>
+        </div>
+      </div></div>
+      <!-- img4 -->
+    <div class="col-lg-3 text-white"><div class="card bg-dark" style="width: 16rem;">
+        <img src="./yougert glass.jpeg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Stew</h5>
+          <h4 class="text-danger fw-bold">$14.99</h4>
+        </div>
+      </div></div>
+  </div>
+  </section>
+</div></main>
+
+
+
+
+
+
+
+<!------------------------------------------           Footer  Section                ------------------>
+
+      <footer style="display: flex; flex-direction: column;">
+          <div style="background-color: rgb(56, 56, 56); ">
+          <div class="container py-4">
+          <div class="row mt-5">
+        <!-------------------------          Col-1             ------------------------>
+        <div class="col-lg-4 ">
+            <h5 class="fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">CONTACT US</h5>
+            <h2 class="text-danger">--</h2><div>
+            <h6 style="color: #fff; font-size: 18px;" class="fw-bold">Call Us</h6>
+            <p class="text-white"> (041)613-518-7434</p></div><div>
+            <h6 style="color: #fff;" class="fw-bold">Email us</h6>
+            <a href="mailto:support@dcthemes.com"style="color: #fff;">info@oldtown.com</a></div>
+            <div class="mt-1 mb-3">
+            <h6 style="color: #fff;" class="fw-bold">Our Location</h6>
+            <p class="text-white">577 Gladstone old Town</p></div></div>
+  
+  
+     <!-----------------------------             Col-2                 ------------------------->
+        <div class="col-lg-4">
+          <h5 class="text-center  fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">OLD TOWN</h5>
+          <h2 class="text-danger text-center">--</h2><br>
+          <h6 class="text-center text-white">Whisper to us about your feelings, and we will prepare  what you need now.</h6>
+          <hr class="bg-white">
+          <div class="d-flex justify-content-center">
+          <a href="https://www.google.co.uk/" target="_blank" class="text-decoration-none text-white fs-4 mx-3"><i class="fa-brands fa-google"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" class="text-decoration-none text-white fs-4 mx-3"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none text-white fs-4 mx-3"><i class="fa-brands fa-instagram"></i></a>
+          </div></div>
+        
+        
+        
+        
+          <!----------------------------                Col-3              ----------------------------->
+        <div class="col-lg-4 text-center">
+            <h5 class="text-center  fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">QUICK LINKS</h5>
+            <h2 class="text-danger text-center">--</h2>
+            <div class="text-white"><a style="text-decoration: none; color: #fff;" href="./index.html">Home</a></div>
+            <div class="text-white mt-1"><a style="text-decoration:none; color: #fff;" href="./About1.html">About Us</a></div>
+            <div class="text-white mt-1 "><a style="text-decoration:none; color:#fff;" href="./Menu.html">Menu</a></div>
+            <div class="text-white mt-1 "><a style="text-decoration:none; color:#fff;" href="./Contact.html">Contact Us</a><br>
+            <a style="text-decoration: none; color: #fff;" class="mt-2">Term & Condition | Privacy Policy</a></div>
+            </div></div></div>
+
+
+            <!-------------------                Ending Part                  ------------------------>
+            <div style="background-color: rgb(37, 36, 36);">
+              <div class="container">
+              <div class="row text-white">
+              <div class="col-lg-12  text-center">
+              <p class="pt-1">© 2023 Old Town. All rights reserved | Powered by<a href="" class="text-danger fw-bold">Usman</a></p>
+              </div></div></div></div>
+                  </footer>
+
+
+
+            <!-- -------------------                   JavaScript Link           ------------------>
+            <script src="./JS/script.js"></script>
+</body>
+
+</html>

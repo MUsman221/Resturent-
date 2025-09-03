@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">ss
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <!-- Toastify js -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- FontAwsome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100"
+style="background-image:url('./about-1.jpg'); height: 100vh;" >
+<!-- HEADER -->
+  <header class="bg-dark container-fluid" style="position: fixed; z-index: 100;">
+    <nav class="navbar navbar-expand container">
+      <div class="flex items-center col-lg-4 ">
+        <img src="./Old Town-01.png" alt="Old Town Restaurant" class="w-40 h-15 ">
+      </div>
+      <ul class="nav justify-content-end  col-lg-4">
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./About1.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold " href="./Menu.html">Menu</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./Contact.html">Contact</a>
+        </li>
+
+      </ul>
+      
+        <div class="col-lg-4" style="margin-left: 25%;">
+        <a class="btn rounded-3 text-decoration-none text-white px-2 py-2 mt-1" style="cursor: pointer;" onclick="BookATable()" id="book">Book a table</a>
+      </div>
+    </nav>
+  </header>
+
+  <!------------------------------- Main -------------------->
+
+  <main >
+    <div class="container-fluid" style="position: relative;">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center text-white"
+            style="margin-top: 10%; font-size: 50px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+            Contact Us</h1>
+          <h2 class="text-center text-white mb-5">Please give us a call, or email us <br> and we’ll get back to you.</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2 -->
+    <!-- <div style="background-color:  rgb(37, 36, 36)"> -->
+      <div class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <span class="d-flex mt-4">
+              <div
+              class="d-flex flex-column justify-content-center align-items-center"
+                style="width: 25%; height: 45vh; ; border-radius: 14px; box-shadow: 0 0 9px 0 rgba(218, 0, 0, 0.9);">
+                <i class="fa-solid display-5 text-white fa-map-location"></i>
+                <h5 class="text-center text-white fw-bold mt-3"> Our Location</h5>
+                 <p class="text-center text-white">577 Gladstone old Town</p>
+
+              </div>
+              <div class="bg-dark ms-4 d-flex flex-column justify-content-center align-items-center"
+                style="width: 25%; height: 45vh; background-color: rgb(39, 34, 34); border-radius: 14px; border: 1px solid red;">
+                <i class="fa-solid display-5 text-white fa-phone-volume"></i>
+                <h5 class="text-center text-white fw-bold mt-3"> Phone No</h5>
+                <p class="text-center text-white" >(041)123-456-789</p>
+
+              </div>
+              <div class="bg-dark  ms-4 d-flex flex-column justify-content-center align-items-center"
+                style="width: 25%; height: 45vh;  background-color: rgb(39, 34, 34); border-radius: 14px; border: 1px solid red">
+                <i class="fa-solid display-5 text-white fa-envelopes-bulk"></i>
+                <h5 class="text-center text-white fw-bold mt-3"> Our E-mail</h5>
+                <p class="text-center text-white " >info@oldtown.com</p>
+              </div>
+              <div class="bg-dark ms-4 d-flex flex-column justify-content-center align-items-center"
+                style="width: 25%; height: 45vh; background-color: rgb(39, 34, 34); border-radius: 14px; border: 1px solid red">
+                <i class="fa-solid display-5 text-white fa-calendar-days"></i>
+                <h5 class="text-center text-white fw-bold mt-3"> Opening Hour</h5>
+                <p class="text-center text-white" style="font-size: 14px;">Sat-Sun: 09:00 AM to 10:00 PM</p>
+                <p class="text-center text-white" style="font-size: 14px;" >Mon-Thur: 09:00 AM to 12:00 PM</p>
+                <p class="text-center text-white" style="font-size: 14px;">Friday: Closed</p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------ Section Message ------------------->
+
+
+
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <img src="./Depositphotos_81823432_XL-scaled-e1679450956817.jpg" alt=""
+              style="width: 100%; border-radius: 15px;">
+          </div>
+          <div class="col-lg-6">
+            <form action="">
+            <div class="row">
+              <h5 class="text-danger ms-4 mt-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">-send message
+              </h5>
+              <h3 class="text-center text-white fw-bold">We Welcome you, VISIT US ANYTIME</h3>
+             
+              <div class="col-lg-6">
+                <input type="text" class="email form-control py-2 mt-3" id="fullName" 
+                  placeholder="Your Name"  />
+
+              </div>
+              <div class="col-lg-6">
+                <input type="number" id="phone-no" class="email form-control  ms-5 py-2 mt-3" 
+                  placeholder="Your Phone" />
+              </div>
+
+
+              <div class="col-lg-6">
+                <input type="email" id="e-mail" class="email form-control py-2 mt-4 " 
+                  placeholder="Your Email"/>
+              </div>
+              <div class="col-lg-6">
+                <select data-field_type="select" class="email py-1 mt-4 ms-5 w-100 rounded-2" style="color: grey;"
+                  id="service">
+                  <option class="" value="">Select Service</option>
+                  <option value="1"> Service 1</option>
+                  <option value="2">Service 2</option>
+                  <option value="3">Service 3</option>
+                  <option value="4">Service 4</option>
+                  <option value="5">Service 5</option>
+                  <option value="6">Service 6</option>
+                  <option value="7">Service 7</option>
+
+                </select>
+              </div>
+            </div>
+            <textarea class="form-control mt-2 email" id="MsgBox" style="width: 100vh;" name="message"
+              rows="6" ></textarea>
+
+            <div class="col">
+
+              <button class=" btn  mt-2 py-2 mb-2 email" id="message" style="margin-left: 50%;" onclick="SubmitMessage()">Send Message</button>
+            </form>
+            </div>
+          
+          </div>
+        
+        </div>
+      </div>
+
+      <!----------------- online Reservation ----------------------->
+      <div class="bg-dark text-white">
+        <div class="container">
+          <div class="row ">
+            <div class="col">
+              <!-- Span 3 -->
+              <span style="display: flex;">
+                <div style="width: 50%;">
+                  <h5 class="text-danger mt-2">Book A Table</h5>
+                  <h3 style="color: white; font-size: 30px;">ONLINE Reservation</h3>
+
+
+              <form action="" class="mt-2">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="email form-control" id="name"  />
+                    </div>
+                    <div class="col-lg-4">
+                      <label for="E-mail" class="form-label">Your Email</label>
+                      <input type="email" class=" email form-control" id="E-mail"  />
+                    </div>
+                    <div class="col-lg-4">
+                      <label for="phone" class="form-label">Your Phone</label>
+                      <input type="number" class="email form-control me-2" id="phone" />
+                    </div>
+                  </div>
+                  <!-- Row 2 -->
+                  <div class="row mt-4">
+                    <div class="col-lg-4">
+                      <label for="person" class="form-label">How many Person?</label>
+                      <select data-field_type="select" class="py-1 email  text-white w-100 rounded-2" id="person"
+                        style=" background-color: rgb(32, 30, 30);">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="More Than 10">More Than 10</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-4">
+                      <label for="date" class="form-label">Pick a Date</label>
+                      <input type="date" class="form-control email" id="date" />
+
+                    </div>
+                    <div class="col-lg-4">
+                      <label for="time" class="form-label">Time</label>
+                      <select data-field_type="select" class="email py-1 text-white w-100 rounded-2" id="time"
+                        style=" background-color: rgb(32, 30, 30);">
+                        <option value=""></option>
+                        <option value="10:00AM">10:00AM</option>
+                        <option value="2">11:00 AM</option>
+                        <option value="3">12:00AM</option>
+                        <option value="4">01:00PM</option>
+                        <option value="5">02:00PM</option>
+                        <option value="6">03:00PM</option>
+                        <option value="7">04:00PM</option>
+                        <option value="8">05:00PM</option>
+                        <option value="9">06:00PM</option>
+                        <option value="10">07:00PM</option>
+                        <option value="More Than 10">09:00PM</option>
+                      </select>
+
+                    </div>
+                    <textarea  rows="5" style="background-color: rgb(34, 34, 34);"
+                      id="mess" class="email input text-white mt-4" data-required_mark="required"
+                      data-field_type="text" placeholder="Message"  ></textarea>
+
+                    <div class="col"><button class="btn mt-2 py-2 mb-2" style="margin-left: 40%;" id="message" onclick="handleSubmit()">Send
+                        Message</button>
+                    </div>
+                  </div>
+                </div>
+                <!--  Col-2 -->
+                <div style="width: 50%;">
+                  <h6 class="mt-4" style="margin-left: 40%;">Booking Request:(<span
+                      class="text-danger">613-518-7434</span>)</h6>
+                  <br><img src="./ottawa-kabab-restaurant-interior.jpeg" class="ms-4"
+                    style="width: 100%; height: 70%; border-radius:  15px;">
+
+                </div></span></div>
+              </form>
+          </div>
+        </div></div>
+  </main>
+
+
+
+
+  <footer>
+    <div style="background-color: rgb(56, 56, 56); ">
+      <div class="container py-4">
+        <div class="row mt-5">
+          <div class="col-lg-4 ">
+    
+            <h5 class="fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">CONTACT US</h5>
+    <h2 class="text-danger">--</h2>
+    <div>
+      <h6 style="color: #fff; font-size: 18px;" class="fw-bold">Call Us</h6>
+      <p class="text-white"> (041)613-518-7434</p>
+      </div>
+      <div>
+        <h6 style="color: #fff;" class="fw-bold">Email us</h6>
+        <a href="mailto:support@dcthemes.com"style="color: #fff;">info@oldtown.com</a>
+       </div>
+       <div class="mt-1 mb-3">
+        <h6 style="color: #fff;" class="fw-bold">Our Location</h6>
+        <p class="text-white">577 Gladstone old Town</p>
+        
+       </div>
+    </div>
+    
+    <!-- Second Row -->
+          <div class="col-lg-4">
+            <h5 class="text-center  fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">OLD TOWN</h5>
+            <h2 class="text-danger text-center">--</h2><br>
+            <h6 class="text-center text-white">Whisper to us about your feelings, and we will prepare  what you need now.</h6>
+            <hr class="bg-white">
+            <div class="d-flex justify-content-center">
+              <a href="https://www.google.co.uk/" target="_blank" class="text-decoration-none text-white fs-4 mx-3">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="#" class="text-decoration-none text-white fs-4 mx-3">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="text-decoration-none text-white fs-4 mx-3">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="col-lg-4 text-center">
+            <h5 class="text-center  fw-bold" style="font-size: 20px; color: rgb(252, 252, 250);">QUICK LINKS</h5>
+            <h2 class="text-danger text-center">--</h2>
+            <div class="text-white">
+              <a style="text-decoration: none; color: #fff;"  href="./index.html">Home</a>
+              </div><div class="text-white  mt-1">
+              <a style="text-decoration: none; color: #fff;"  href="./About.html">About Us</a>
+              </div><div class="text-white mt-1 ">
+              <a style="text-decoration: none; color: #fff;" href="./Menu.html">Menu</a>
+              </div><div class="text-white mt-1 ">
+              <a style="text-decoration: none; color: #fff;" href="./Contact.html">Contact Us</a><br>
+                <a style="text-decoration: none; color: #fff;" class="mt-2">Term & Condition | Privacy Policy</a>
+              </div>
+              </div>
+              </div>
+          </div>
+   <div style="background-color: rgb(37, 36, 36);">
+              <div class="container">
+            <div class="row text-white">
+              <div class="col-lg-12  text-center">
+                <p class="pt-1">© 2023 Old Town. All rights reserved | Powered by<a href="www.google.com" class="text-danger fw-bold">Usman</a></p>
+             </div></div></div>
+            </div>
+          </footer>
+          <!-- JS FILE -->
+          <script src="./JS/script1.js"></script>
+          <!-- TOASTIFY JS -->
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  
+
+</body>
+
+</html>
